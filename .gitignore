@@ -1,0 +1,38 @@
+# --- SPARK ---
+spark/*.tgz
+spark/spark-*-bin-hadoop3.tgz
+
+# --- JUPYTER ---
+jupyter/*.tgz
+jupyter/spark-*-bin-hadoop3.tgz
+jupyter/notebooks/.ipynb_checkpoints/
+
+# --- HADOOP DATA DIRS ---
+hadoop/**/data/
+
+# Namenode & Datanodes persistent HDFS data
+hadoop/namenode/data/
+hadoop/datanode/data/
+hadoop/historyserver/data/
+
+# Hive metastore & warehouse
+hive/data/
+hive/warehouse/
+
+# Hue DB
+hue/data/
+
+# --- AIRFLOW ---
+airflow/data/
+airflow/logs/
+
+# --- PYTHON CACHE ---
+__pycache__/
+**/__pycache__/
+*.pyc
+
+# --- LOGS ---
+*.log
+
+# --- OS FILES ---
+.DS_Store
