@@ -82,3 +82,21 @@ docker compose down
 ## Para eliminar volúmenes:
 
 docker compose down -v
+
+
+## Hive
+
+## Uso de Hive (HDFS + SQL)
+
+Entrar al contenedor de HiveServer2:
+
+docker exec -it hiveserver2 bash
+
+Dar permisos al warehouse (recomendado):
+
+chmod -R 777 /opt/hive/data/warehouse
+
+Conectar a Hive con Beeline:
+
+/opt/hive/bin/beeline
+!connect jdbc:hive2://localhost:10000
